@@ -1,9 +1,11 @@
 #this is the introduction
 label introduction:
 
+    #TODO implement introduction
+
     scene bg meadow
 
-    # This shows a character sprite. 
+    # This shows a character sprite.
 
     show frog talk at left
 

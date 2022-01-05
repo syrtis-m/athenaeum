@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("vertical slice")
+define config.name = _("vertical slice") #TODO update config.name with final game name
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -23,12 +23,12 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "1.0"
+define config.version = "Alpha" #TODO update config version on launch
 
 
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
-
+#TODO implement an about screen
 define gui.about = _p("""
 """)
 
@@ -36,8 +36,10 @@ define gui.about = _p("""
 ## A short name for the game used for executables and directories in the built
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
-
+#TODO update build.name to match config.name
 define build.name = "verticleslice"
+
+define config.allow_skipping = False #we don't want skipping no sir.
 
 
 ## Sounds and music ############################################################
@@ -46,9 +48,9 @@ define build.name = "verticleslice"
 ## to the player by default. Setting one of these to False will hide the
 ## appropriate mixer.
 
-define config.has_sound = True
-define config.has_music = True
-define config.has_voice = False
+define config.has_sound = False #we don't have sound, so...
+define config.has_music = True #AHHH TODO Get music for the game
+define config.has_voice = False #we don't have VA, so..
 
 
 ## To allow the user to play a test sound on the sound or voice channel,
@@ -120,7 +122,7 @@ define config.window_hide_transition = Dissolve(.2)
 ## Controls the default text speed. The default, 0, is infinite, while any other
 ## number is the number of characters per second to type out.
 
-default preferences.text_cps = 0
+default preferences.text_cps = 30 #TODO experiment with different default text speeds - possibly implement a text speed slider in the game menu
 
 
 ## The default auto-forward delay. Larger numbers lead to longer waits, with 0
