@@ -1,13 +1,28 @@
 ﻿# The script of the game goes in this file.
 
-#TODO implement a splash screen
-
 #TODO define all characters
-define f = Character("Frog")
+define f = Character("Frog") #TODO remove frog from game
+define m = Character("Mom")
 define h = Character("Harper")
+define r = Character("Robinson")
+define b = Character("Bo")
+define c = Character("Cosette")
+define ho = Character("Holden")
 
 #TODO load all character images
 image frog talk = "frog_talk.jpg"
+
+label splashscreen:
+    scene black
+    with Pause(1)
+
+    show text "VerticalSlice" #TODO replace with game studio name https://www.renpy.org/doc/html/splashscreen_presplash.html
+    with Pause(2)
+
+    hide text with fade
+    with Pause(1)
+
+    return
 
 
 # The game starts here.
@@ -21,9 +36,10 @@ label character_select:
 
     h "Who do you want to talk to?"
 
+
+    #TODO consider putting something in so it auto-goes to the decision scene if needed.
+
     #this menu is a chapter select.
-    #TODO I need to implement a better menu for which character to talk to
-    #TODO implement something that greys out talking to a character once you've done their dialoge
     menu:
         "Robinson" if MET_ROBINSON == False:
             $ MET_ROBINSON = True
@@ -39,20 +55,21 @@ label character_select:
             call character4
         "Decision" if ((MET_ROBINSON == True) and (MET_BO == True)) and ((MET_HOLDEN == True) and (MET_COSETTE == True)):
             jump decision
-            
+
     jump character_select
 
 label start:
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
-
     python:
+        #INITIALIZING FLAGS
         MET_ROBINSON = False
         MET_BO = False
         MET_COSETTE = False
         MET_HOLDEN = False
+
+        #INITIALIZING DECISION TRACKER SYSTEM
+        stay = 0
+        leave = 0
 
     jump introduction
 
