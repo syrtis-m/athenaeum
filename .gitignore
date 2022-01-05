@@ -12,6 +12,7 @@ saves/
 *.exe
 *.o
 *.so
+*.bak
 
 *.rpyc
 *.rpymc

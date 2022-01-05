@@ -6,4 +6,4 @@ label character1:
 
 
 
-    return
+    jump character_select
