@@ -17,6 +17,8 @@ saves/
 *.rpyc
 *.rpymc
 
+#Music cannot be uploaded to github per license
+*.wav
 
 # The log file and other misc things #
 ######################################

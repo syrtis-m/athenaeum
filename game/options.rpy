@@ -31,7 +31,7 @@ define config.version = "Alpha" #TODO update config version on launch
 #TODO implement an about screen
 define gui.about = _p("""
 """)
-
+#TODO implement credits for the music & shoot the music artist a DM. http://abstractionmusic.com/#secLicensing
 
 ## A short name for the game used for executables and directories in the built
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
