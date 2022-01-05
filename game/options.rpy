@@ -39,6 +39,8 @@ define gui.about = _p("""
 #TODO update build.name to match config.name
 define build.name = "verticleslice"
 
+define config.menu_include_disabled = True
+
 define config.allow_skipping = False #we don't want skipping no sir.
 
 

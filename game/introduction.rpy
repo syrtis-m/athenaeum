@@ -13,4 +13,4 @@ label introduction:
 
     f "AH"
 
-    return
+    jump character_select

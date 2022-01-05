@@ -3,7 +3,7 @@
 #TODO implement Robinson
 label character1:
 
-
+    f "robinson"
 
 
     return

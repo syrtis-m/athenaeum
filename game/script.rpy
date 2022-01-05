@@ -37,7 +37,10 @@ label character_select:
         "Holden" if MET_HOLDEN == False:
             $ MET_HOLDEN = True
             call character4
-    jump decision
+        "Decision" if ((MET_ROBINSON == True) and (MET_BO == True)) and ((MET_HOLDEN == True) and (MET_COSETTE == True)):
+            jump decision
+            
+    jump character_select
 
 label start:
 
@@ -51,8 +54,6 @@ label start:
         MET_COSETTE = False
         MET_HOLDEN = False
 
-    call introduction #use call instead of jump to do a transfer of the control stack as a whole https://www.renpy.org/doc/html/label.html
-
-    call character_select
+    jump introduction
 
     return
