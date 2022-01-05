@@ -15,6 +15,8 @@ image frog talk = "frog_talk.jpg"
 #TODO implement the system that keeps track of what dialogue choices the player makes
 
 label character_select:
+    play music "audio/Ludum_Dare_30_Track_1.wav" loop fadein 1.0
+
     h "Hmmm… Cosette’s probably in their studio, Robinson’s down by the canal with her fish traps, Bo’s over there tending his sheep… I guess that leaves Holden off in some corner somewhere."
 
     h "Who do you want to talk to?"
