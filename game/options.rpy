@@ -66,7 +66,7 @@ define config.has_voice = False #we don't have VA, so..
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
 
-# define config.main_menu_music = "main-menu-theme.ogg"
+define config.main_menu_music = "audio/Ludum_Dare_30_Track_1.wav"
 
 
 ## Transitions #################################################################

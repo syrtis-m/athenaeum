@@ -3,7 +3,9 @@
 #TODO implement Robinson
 label character1:
 
-    f "robinson"
+    play music "audio/Ludum_Dare_32_Track_2.wav" loop fadein 1.0
+
+    r "robinson"
 
 
     return
