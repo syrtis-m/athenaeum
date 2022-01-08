@@ -1,13 +1,12 @@
 ﻿# The script of the game goes in this file.
 
 #TODO define all characters
-define f = Character("Frog") #TODO remove frog from game
 define m = Character("Mom")
-define h = Character("Harper")
-define r = Character("Robinson")
-define b = Character("Bo")
-define c = Character("Cosette")
-define ho = Character("Holden")
+define h = Character("Harper", image="harper")
+define r = Character("Robinson", image="robinson")
+define b = Character("Bo", image="bo")
+define c = Character("Cosette", image="cosette")
+define ho = Character("Holden", image="holden")
 
 #TODO load all character images
 image frog talk = "frog_talk.jpg"
@@ -32,31 +31,35 @@ label splashscreen:
 label character_select:
     play music "audio/Ludum_Dare_30_Track_6.wav" loop fadein 1.0
 
+    scene town center
+
+    show harper neutral at right
+
     h "Hmmm… Cosette’s probably in their studio, Robinson’s down by the canal with her fish traps, Bo’s over there tending his sheep… I guess that leaves Holden off in some corner somewhere."
 
-
-
-    #TODO consider putting something in so it auto-goes to the decision scene if needed.
-
-    #this menu is a chapter select.
     menu:
         "Who do you want to talk to?"
+        #TODO add scene transitions.
 
         "Robinson" if MET_ROBINSON == False:
             $ MET_ROBINSON = True
-            call character1
+            pc "Let's talk to Robinson..."
+            call character1 from _call_character1
 
         "Bo" if MET_BO == False:
             $ MET_BO = True
-            call character2
+            pc "Let's talk to Bo..."
+            call character2 from _call_character2
 
         "Cosette" if MET_COSETTE == False:
             $ MET_COSETTE = True
-            call character3
+            pc "Let's talk to Cosette..."
+            call character3 from _call_character3
 
         "Holden" if MET_HOLDEN == False:
             $ MET_HOLDEN = True
-            call character4
+            pc "Let's talk to Holden..."
+            call character4 from _call_character4
 
         "Decision" if ((MET_ROBINSON == True) and (MET_BO == True)) and ((MET_HOLDEN == True) and (MET_COSETTE == True)):
             jump decision

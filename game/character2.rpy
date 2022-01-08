@@ -5,6 +5,8 @@ label character2:
 
     play music "audio/Ludum_Dare_38_Track_3.wav" loop fadein 1.0
 
+    scene readingroom with fade
+
     b "Bo"
 
 

@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("vertical slice") #TODO update config.name with final game name
+define config.name = _("Winter Break VN") #TODO update config.name with final game name
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "Alpha" #TODO update config version on launch
+define config.version = "alpha-0.1" #TODO update config version on launch
 
 
 ## Text that is placed on the game's about screen. Place the text between the
@@ -37,7 +37,7 @@ define gui.about = _p("""
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 #TODO update build.name to match config.name
-define build.name = "verticleslice"
+define build.name = "winterbreakvn"
 
 define config.menu_include_disabled = True
 
@@ -51,7 +51,7 @@ define config.allow_skipping = False #we don't want skipping no sir.
 ## appropriate mixer.
 
 define config.has_sound = False #we don't have sound, so...
-define config.has_music = True #AHHH TODO Get music for the game
+define config.has_music = True
 define config.has_voice = False #we don't have VA, so..
 
 
@@ -74,6 +74,10 @@ define config.main_menu_music = "audio/Ludum_Dare_30_Track_1.wav"
 ## These variables set transitions that are used when certain events occur.
 ## Each variable should be set to a transition, or None to indicate that no
 ## transition should be used.
+
+define config.say_attribute_transition = None
+
+
 
 ## Entering or exiting the game menu.
 
@@ -124,7 +128,7 @@ define config.window_hide_transition = Dissolve(.2)
 ## Controls the default text speed. The default, 0, is infinite, while any other
 ## number is the number of characters per second to type out.
 
-default preferences.text_cps = 30 #TODO experiment with different default text speeds - possibly implement a text speed slider in the game menu
+default preferences.text_cps = 30
 
 
 ## The default auto-forward delay. Larger numbers lead to longer waits, with 0
