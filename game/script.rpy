@@ -67,6 +67,11 @@ label character_select:
     jump character_select
 
 label start:
+    show harper happy at left
+
+    show bo happy cropped at right
+
+    b "test"
 
     python:
         #INITIALIZING FLAGS
