@@ -31,14 +31,14 @@ label splashscreen:
 label character_select:
     play music "audio/Ludum_Dare_30_Track_6.wav" loop fadein 1.0
 
-    scene town center
+    scene town center with fade
 
     show harper neutral at right
 
     h "Hmmm… Cosette’s probably in their studio, Robinson’s down by the canal with her fish traps, Bo’s over there tending his sheep… I guess that leaves Holden off in some corner somewhere."
 
     menu:
-        "Who do you want to talk to?"
+        h "Who do you want to talk to, [yn]?"
         #TODO add scene transitions.
 
         "Robinson" if MET_ROBINSON == False:
@@ -67,11 +67,7 @@ label character_select:
     jump character_select
 
 label start:
-    show harper happy at left
 
-    show bo happy cropped at right
-
-    b "test"
 
     python:
         #INITIALIZING FLAGS

@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "alpha-0.1" #TODO update config version on launch
+define config.version = "alpha-0.2" #TODO update config version on launch
 
 
 ## Text that is placed on the game's about screen. Place the text between the
@@ -42,6 +42,8 @@ define build.name = "winterbreakvn"
 define config.menu_include_disabled = True
 
 define config.allow_skipping = False #we don't want skipping no sir.
+
+define config.has_autosave = False
 
 
 ## Sounds and music ############################################################
@@ -134,7 +136,7 @@ default preferences.text_cps = 30
 ## The default auto-forward delay. Larger numbers lead to longer waits, with 0
 ## to 30 being the valid range.
 
-default preferences.afm_time = 15
+default preferences.afm_time = 6
 
 
 ## Save directory ##############################################################

@@ -94,7 +94,7 @@ label introduction:
 
     h "Not really, it's just - I just need to think about it more"
 
-    m "Well, what if you and Y/N go talk to some people who’ve made the choice before? I know Bo’s in town this week, and you can probably find Robinson down at the canal."
+    m "Well, what if you and [yn] go talk to some people who’ve made the choice before? I know Bo’s in town this week, and you can probably find Robinson down at the canal."
 
     h "Yeah..."
 
