@@ -1,8 +1,6 @@
 #this is the introduction
 label introduction:
 
-    #TODO implement introduction
-
     play music "audio/Ludum_Dare_30_Track_1.wav" loop fadein 1.0
 
     define pc = Character("[yn]")

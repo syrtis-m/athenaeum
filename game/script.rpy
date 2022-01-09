@@ -1,15 +1,11 @@
 ﻿# The script of the game goes in this file.
 
-#TODO define all characters
-define m = Character("Mom")
+define m = Character("Mom", image="mom")
 define h = Character("Harper", image="harper")
 define r = Character("Robinson", image="robinson")
 define b = Character("Bo", image="bo")
 define c = Character("Cosette", image="cosette")
 define ho = Character("Holden", image="holden")
-
-#TODO load all character images
-image frog talk = "frog_talk.jpg"
 
 label splashscreen:
     scene black
@@ -25,8 +21,6 @@ label splashscreen:
 
 
 # The game starts here.
-
-#TODO implement the system that keeps track of what dialogue choices the player makes
 
 label character_select:
     play music "audio/Ludum_Dare_30_Track_6.wav" loop fadein 1.0

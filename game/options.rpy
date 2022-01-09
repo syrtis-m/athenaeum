@@ -12,18 +12,18 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("Winter Break VN") #TODO update config.name with final game name
+define config.name = _("Athenaeum") #TODO update config.name with final game name
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
 ## this to False to hide the title.
 
-define gui.show_name = True
+define gui.show_name = False
 
 
 ## The version of the game.
 
-define config.version = "alpha-0.2" #TODO update config version on launch
+define config.version = "alpha-0.3" #TODO update config version on launch
 
 
 ## Text that is placed on the game's about screen. Place the text between the
@@ -37,7 +37,7 @@ define gui.about = _p("""
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 #TODO update build.name to match config.name
-define build.name = "winterbreakvn"
+define build.name = "athenaeum"
 
 define config.menu_include_disabled = True
 
