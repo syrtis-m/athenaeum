@@ -30,6 +30,21 @@ define config.version = "alpha-0.3" #TODO update config version on launch
 ## triple-quotes, and leave a blank line between paragraphs.
 #TODO implement an about screen
 define gui.about = _p("""
+Made By:
+
+Syrtis (@syrtis_ on twitter)
+
+K.O. (@K_N_O_C_K_O_U_T on twitter)
+
+Villain (@m.ercurial on instagram)
+
+
+Music by Abstraction Music:
+\nLudum Dare 30 Track 1, 2, 3, 5, and 6.
+\nLudum Dare 32 Track 2, 3, and 5.
+\nLudum Dare 38 Track 3, 5, and 8.
+\nhttp://abstractionmusic.com/
+
 """)
 #TODO implement credits for the music & shoot the music artist a DM. http://abstractionmusic.com/#secLicensing
 
