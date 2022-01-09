@@ -8,10 +8,10 @@ Hear the story of those who chose to stay and those who left before deciding to 
 
 Athenaeum has four possible endings and a playtime of roughly 20 minutes.
 
-##Download
+## Download
 [Itch.io page](https://syrtis.itch.io/athenaeum)
 
-##Contributors
+## Contributors
 [syrtis](twitter.com/syrtis_)
 [K.O.](https://twitter.com/K_N_O_C_K_O_U_T)
 [Villain](http://www.instagram.com/m.ercurial/)
