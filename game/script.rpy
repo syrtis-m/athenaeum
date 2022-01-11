@@ -7,18 +7,6 @@ define b = Character("Bo", image="bo")
 define c = Character("Cosette", image="cosette")
 define ho = Character("Holden", image="holden")
 
-label splashscreen:
-    scene black
-    with Pause(1)
-
-    show text "Vertical Slice" #TODO replace with game studio name https://www.renpy.org/doc/html/splashscreen_presplash.html
-    with Pause(2)
-
-    hide text with fade
-    with Pause(1)
-
-    return
-
 
 # The game starts here.
 
