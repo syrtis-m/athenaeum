@@ -23,20 +23,18 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "wednesday beta" #TODO remove config version before pushing to itch.io
+define config.version = "Beta" #TODO remove config version before pushing to itch.io
 
 
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 #TODO implement an about screen
 define gui.about = _p("""
-Made By:
+Writing, Programming: syrtis (@syrtis_ on twitter)
 
-Syrtis (@syrtis_ on twitter)
+Character Art, Backgrounds: K.O. (@K_N_O_C_K_O_U_T on twitter)
 
-K.O. (@K_N_O_C_K_O_U_T on twitter)
-
-Villain (@m.ercurial on instagram)
+Character Art, Writing: Villain (@m.ercurial on instagram)
 
 
 Music by Abstraction Music:

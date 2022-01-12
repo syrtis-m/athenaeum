@@ -8,5 +8,6 @@ label character3:
     c "cosette"
 
     scene workshop with fade
+    with Pause(3)
 
     return
