@@ -42,20 +42,20 @@ label character4:
     menu:
         "What made you choose to stay?":
             $ stay += 1
-            call HQ1A1
+            call HQ1A1 from _call_HQ1A1
         "Do you ever regret staying?":
             $ leave += 1
-            call HQ1A2
+            call HQ1A2 from _call_HQ1A2
 
     ho sad "I can’t leave now, not after all of this time. There’s nothing for me out there, and I’m past the point of any interest in going out alone."
 
     menu:
         "You probably wouldn't have to be alone that long.":
             $ leave += 1
-            call HQ2A1
+            call HQ2A1 from _call_HQ2A1
         "I understand.":
             $ stay += 1
-            call HQ2A2
+            call HQ2A2 from _call_HQ2A2
 
     ho upset "Did you talk to Cosette yet?"
 

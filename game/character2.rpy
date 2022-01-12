@@ -53,10 +53,10 @@ label character2:
     menu:
         "So why leave? You could have stayed in your original village.":
             $ stay += 1
-            call BQ1A1
+            call BQ1A1 from _call_BQ1A1
         "So why take the sheep with you on your journey?":
             $ leave += 1
-            call BQ1A2
+            call BQ1A2 from _call_BQ1A2
 
     b "Transhumance is characterized by how the herd moves between two points depending on the seasons. The seasons in the Library don’t make much sense, so instead I decided to just find a path that would bring me back to my parent’s village once every year or so."
 
@@ -79,10 +79,10 @@ label character2:
     menu:
         "Do you ever regret deciding to travel?":
             $ leave += 1
-            call BQ2A1
+            call BQ2A1 from _call_BQ2A1
         "It must be lonely constantly traveling.":
             $ stay += 1
-            call BQ2A2
+            call BQ2A2 from _call_BQ2A2
 
     if MET_ROBINSON:
         b neutral "Though now that I’m thinking of it, you might want to go talk to Robinson - she definitely had a different experience with choosing to leave."

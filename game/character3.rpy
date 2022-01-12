@@ -71,10 +71,10 @@ label character3:
     menu:
         "What about the people? Don’t you miss your friends who left?":
             $ leave += 1
-            call CQ1A1
+            call CQ1A1 from _call_CQ1A1
         "Wait, you’ve been able to be creative without leaving?":
             $ stay += 1
-            call CQ1A2
+            call CQ1A2 from _call_CQ1A2
     show harper neutral at right
     show cosette neutral at left
 
@@ -93,10 +93,10 @@ label character3:
     menu:
         "You really never get bored of this section?":
             $ leave += 1
-            call CQ2A1
+            call CQ2A1 from _call_CQ2A1
         "What's it like staying in one place for so long?":
             $ stay += 1
-            call CQ2A2
+            call CQ2A2 from _call_CQ2A2
 
     c neutral "People come and leave, but I’ll carry the memories of time spent with people I care about, and I get to meet new people all the time."
 
