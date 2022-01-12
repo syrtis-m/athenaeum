@@ -11,9 +11,11 @@ label character3:
 
     show harper neutral at right
 
+    h "Hey Cosette!"
+
     c "Give me just a second, I need to pin this fabric."
 
-    Pause(2)
+    $ renpy.pause(delay=1)
 
     show cosette neutral at left
 

@@ -11,7 +11,7 @@ label character2:
 
     h: "Bo… BO!"
 
-    Pause(2)
+    $ renpy.pause(delay=1)
 
     show bo laugh at left
 
