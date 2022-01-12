@@ -7,6 +7,9 @@ label character4:
 
     show harper neutral at right
 
+    scene holdenhovel with fade
+    with Pause(3)
+
     h "Hey, Holden, are you around?"
 
     $ holden_not_home = renpy.random.randint(1,100)
@@ -56,7 +59,7 @@ label character4:
 
     ho upset "Did you talk to Cosette yet?"
 
-    if MET_COSETTE = True:
+    if MET_COSETTE:
         h "Yeah?"
 
         ho "They don’t get it. They think that I can just up and leave whenever I want to but they don’t understand what it’s like-"
@@ -88,7 +91,7 @@ label character4:
 label HQ1A1:
     ho happy "That’s an easy one. I’ve wanted to write books since I started reading them, and I started reading them here. It seemed like there was no reason to leave when I had all I needed right where I am."
 
-    h neutral
+    show harper neutral at right
 
     ho laugh "So what was the point in leaving? I figured that I had everything I needed to write right here. Even if that sentiment was a little misguided."
 
@@ -115,7 +118,7 @@ label HQ1A1:
 label HQ1A2:
     ho @ sad "Hah. Yes. Fairly often."
 
-    h neutral
+    show harper neutral at right
 
     pc "Why?"
 

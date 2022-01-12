@@ -34,7 +34,9 @@ label character3:
 
         pc "Exactly."
 
-        c "Oh Holden. He used to tell me that he’d write shelves of books. Now he’s stuck and unhappy. He won’t even talk about his ideas anymore."
+        c "Oh Holden."
+
+        c "He used to tell me that he’d write shelves of books. Now he’s stuck and unhappy. He won’t even talk about his ideas anymore."
 
         c "He’s not happy here, but he won’t let himself decide to try something new."
     else:
@@ -44,7 +46,7 @@ label character3:
 
         c sad "Just, when you talk to him, keep in mind that he could choose to leave at any time. He’s stubborn and won’t admit to himself he’s making no progress on his books just sitting around."
 
-    h neutral
+    show harper neutral at right
 
     c neutral "Anyway, like Holden, I chose to Stay."
 
@@ -54,9 +56,11 @@ label character3:
 
     c @ happy "There’s probably a section somewhere that’s all about fashion, with books and books about different time periods and designers and styles."
 
-    c "That section could be 3 days from here or 3 months from here or 3 years from here. That’s just the nature of the Library, with random organization of sections."
+    c "That section could be 3 days from here, 3 months from here, or 3 years from here. That’s just the nature of the Library."
 
-    c @ sad "And I could go chase that section, but I wouldn’t be happy chasing it. What brings me joy in the world isn’t pursuing some idea, but actually designing and creating clothes!"
+    c @ sad "And I could go chase that section, but I wouldn’t be happy chasing it. What brings me joy in the world isn’t pursuing some nebulous idea."
+
+    c @ happy "What brings me joy is actually working on clothes, making new things."
 
     c @ happy "I get to do that every day here. I get to make clothes that people wear - I made the clothes you’re both wearing. I get to work with people to develop what they want to wear, and I love that!"
 
@@ -71,8 +75,8 @@ label character3:
         "Wait, you’ve been able to be creative without leaving?":
             $ stay += 1
             call CQ1A2
-    h neutral
-    c neutral
+    show harper neutral at right
+    show cosette neutral at left
 
     pc "Do you ever feel like you need to leave to find something new?"
 
@@ -122,7 +126,7 @@ label character3:
 
     c laugh "On a bit of a brighter note, if one of you decides to leave, remember to stop by my shop! I can get you all set up with some clothes that’ll last."
 
-    H happy "Will do!"
+    h happy "Will do!"
 
     return
 
@@ -130,7 +134,7 @@ label CQ1A1:
 
     c upset "Of course! A lot of my friends from when I was your age decided to leave. Most of them never came back."
 
-    h sad
+    show harper sad at right
 
     c sad "It’s hard, not knowing what happened to them, it they’re okay or if…"
 

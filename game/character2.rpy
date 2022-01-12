@@ -9,7 +9,7 @@ label character2:
 
     show harper neutral at right
 
-    h: "Bo… BO!"
+    h "Bo… BO!"
 
     $ renpy.pause(delay=1)
 
@@ -34,15 +34,21 @@ label character2:
 
     h laugh "Transhumance? Is that like transhumanism?"
 
-    b @ laugh "Ha! No, transhumanism refers to evolving beyond humanism - “trans” being latin for across, and humanism referring to the human condition. The “trans” part of transhumance is the same, but “humance” comes from the latin “humus” for ground. Transhumance - across ground."
+    b @ laugh "Ha! No, transhumanism refers to evolving beyond humanism - “trans” being latin for across, and humanism referring to the human condition."
+
+    b "The “trans” part of transhumance is the same, but “humance” comes from the latin “humus” for ground. Transhumance - across ground."
 
     h neutral "Ohhhh."
 
-    b "It’s a way of life in which herds of livestock are moved seasonally, with people who tend to the livestock traveling with the herd. Typically they move between fixed pastures in the summer and winter to take advantage of different weather and to allow vegetation to regrow."
+    b "It’s a way of life in which herds of livestock are moved seasonally, with people who tend to the livestock traveling with the herd."
+
+    b "Typically they move between fixed pastures in the summer and winter to take advantage of different weather and to allow vegetation to regrow."
 
     b @ happy "The people who lived by practicing transhumance have a permanent home, with only the people necessary to maintain the animals traveling with the herd."
 
-    b "My pa raised sheep, and he traveled nomadically, trading the milk or wool to the communities he met on his way. When he met my mother, he decided to settle down in her community and he decreased the size of his flock to allow him to stay in one place year-round."
+    b "My pa raised sheep, and he traveled nomadically, trading the milk or wool to the communities he met on his way."
+
+    b "When he met my mother, he decided to settle down in her community and he decreased the size of his flock to allow him to stay in one place year-round."
 
     menu:
         "So why leave? You could have stayed in your original village.":
@@ -62,7 +68,7 @@ label character2:
 
     b "When I’m in town every year or so I’ll go over to their houses and catch up, but y’know, over time we just grew apart."
 
-    h sad
+    show harper sad at right
 
     b "I know you probably feel like growing apart would be a tragedy, but really it’s something beautiful."
 
@@ -115,7 +121,7 @@ label BQ1A2:
 
     return
 
-label BQ2A1
+label BQ2A1:
     b "No! Not at all. When I was making my decision, I could see the path I would take if I stayed."
 
     b @ sad "I’d tend the herd, maybe do day trips or week trips to different sections - I always did love the AGRICULTURE: ORANGE CULTIVATION section."
@@ -124,7 +130,7 @@ label BQ2A1
 
     return
 
-label BQ2A2
+label BQ2A2:
     b @ sad "Ahhhh, sometimes."
 
     b "But that’s the price I pay for leaving! It might be lonely from time to time, but I also get to experience so many different sections and talk to so many different people."
