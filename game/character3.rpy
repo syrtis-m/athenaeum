@@ -5,9 +5,10 @@ label character3:
     #TODO pick a music track to play here
     play music "audio/Ludum_Dare_30_Track_5.wav" loop fadein 1.0
 
-    c "cosette"
 
     scene workshop with fade
     with Pause(3)
+
+    c "cosette"
 
     return
