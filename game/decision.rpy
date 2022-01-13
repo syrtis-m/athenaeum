@@ -31,7 +31,7 @@ label decision:
 
     h "Yeah, okay."
 
-    pc "You know you’re my best friend right, I’m not suggesting this to abandon you."
+    pc "You know you’re my best friend, right? I’m not suggesting this to abandon you."
 
     h @ happy "Yeah I know, I just."
 
@@ -39,7 +39,7 @@ label decision:
 
     h neutral "But, I guess if we ended up choosing to Stay or Leave together and one of us wasn’t happy, that’d be terrible."
 
-    h "Yeah, Alright, um. How about I go over to the canal, and you go over to your house, and we both write our choice down, and then when we’re done we come back out here?"
+    h "Yeah, alright, um. How about I go over to the canal, and you go over to your house, and we both write our choice down, and then when we’re done we come back out here?"
 
     pc "Yeah, that sounds good."
 
@@ -56,8 +56,13 @@ label decision:
     menu:
         m "Are you going to Stay in our community and find a role here, or Leave and find your place in the rest of the library?"
         "Stay":
+            scene black with fade
+            with Pause(3)
+
             call ending_stay
         "Leave":
+            scene black with fade
+            with Pause(3)
             call ending_leave
 
     show text "Made by syrtis, K.O. and Villain." with fade

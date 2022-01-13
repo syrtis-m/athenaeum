@@ -54,7 +54,7 @@ define build.name = "athenaeum"
 
 define config.menu_include_disabled = True
 
-define config.allow_skipping = False #we don't want skipping no sir.
+define config.allow_skipping = True #we don't want skipping no sir.
 
 define config.has_autosave = False
 

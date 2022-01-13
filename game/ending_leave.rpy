@@ -5,7 +5,7 @@ label ending_leave:
 
     show mom neutral at center
 
-    m "... So you decided to Leave?"
+    m "...So you decided to Leave?"
 
     pc "Yeah… Yeah I think I’m going to Leave."
 
@@ -19,7 +19,7 @@ label ending_leave:
 
     m "Anyway, write down your decision and go tell Harper!"
 
-    "[yn] writes \'Leave\' on a piece of paper."
+    "You write \'Leave\' on a scrap of paper."
 
     show town center evening with fade
 
@@ -36,7 +36,7 @@ label ending_leave:
 
     "You hand Harper the note reading \'Leave\'"
 
-    "Harper hands you a note, folded in half."
+    "Harper hands you a note folded in half."
 
     if stay > leave:
         call ending_leave_stay
@@ -47,7 +47,7 @@ label ending_leave:
 
 label ending_leave_stay:
 
-    "You open the note. In shaky handwriting, the word \'Stay\' is written."
+    "You open the note. In shaky handwriting, \'Stay\' is written."
 
     $ renpy.pause(delay=1)
 
@@ -90,7 +90,7 @@ label ending_leave_stay:
 
 label ending_leave_leave:
 
-    "You open the note. In shaky handwriting, the word \'Leave\' is written."
+    "You open the note. In shaky handwriting, \'Leave\' is written."
 
     $ renpy.pause(delay=1)
 

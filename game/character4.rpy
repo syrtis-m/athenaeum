@@ -5,16 +5,18 @@ label character4:
     #TODO pick a music track to play here
     play music "audio/Ludum_Dare_32_Track_5.wav" loop fadein 1.0
 
-    show harper neutral at right
 
     scene desk with fade
     with Pause(3)
+
+    show harper neutral at right
+
 
     h "Hey, Holden, are you around?"
 
     $ holden_not_home = renpy.random.randint(1,100)
 
-    if holden_not_home <= 40:
+    if holden_not_home <= 35:
         $ renpy.pause(delay=2)
 
         "... Nobody answers."
