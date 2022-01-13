@@ -66,23 +66,25 @@ label introduction:
 
     show mom happy at left
 
-    m "Why don’t you sleep on it, and in the morning talk to Harper? You and her could go talk to some people who stayed, and some who left."
+    m "Why don’t you sleep on it, and in the morning talk to Harper? Maybe she’ll have something to say, she’s probably been thinking about it for herself. You two could also ask around and see what the other people here have to say."
 
-    pc "Yeah! Harper'll have a idea of who'd be good to talk to."
+    pc "Yeah! Harper will probably have a good idea of who to talk to."
 
     scene house day with fade
 
     show harper happy at right
 
-    h "Hello [yn]! Hello Alex!" #TODO tentatively named the mom alex.
+    h "Hello [yn]!" #TODO tentatively named the mom alex.
 
     pc "Hey Harper!"
 
     show mom happy at left
 
-    m "Hello Harper! [yn] still doesn't know if they want to Stay or Leave."
+    m "Good morning Harper! You still have to make your Stay or Leave decision soon right? [yn] still doesn't know their choice."
 
-    h "Yeah... I've been having trouble deciding also."
+    h "Oh, good morning, I didn't see you there!"
+
+    h neutral "Yeah... I've been having trouble deciding also."
 
     show mom neutral at left
 

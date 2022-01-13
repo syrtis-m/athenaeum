@@ -10,10 +10,12 @@ define ho = Character("Holden", image="holden")
 
 # The game starts here.
 
+#TODO FIND AND REPLACE ’ WITH '
+
 label character_select:
     play music "audio/Ludum_Dare_30_Track_6.wav" loop fadein 1.0
 
-    scene town center with fade
+    scene town center day with fade
 
     show harper neutral at right
 

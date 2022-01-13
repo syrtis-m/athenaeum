@@ -7,7 +7,7 @@ label character4:
 
     show harper neutral at right
 
-    scene holdenhovel with fade
+    scene desk with fade
     with Pause(3)
 
     h "Hey, Holden, are you around?"
