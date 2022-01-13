@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "Thursday Beta" #TODO remove config version before pushing to itch.io
+define config.version = "Thursday_Beta" #TODO remove config version before pushing to itch.io
 
 
 ## Text that is placed on the game's about screen. Place the text between the
@@ -51,7 +51,7 @@ define build.name = "athenaeum"
 
 define config.menu_include_disabled = True
 
-define config.allow_skipping = True #we don't want skipping no sir.
+define config.allow_skipping = True #TODO SET TO FALSE BEFORE RELEASE
 
 define config.has_autosave = False
 

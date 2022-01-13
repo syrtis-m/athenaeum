@@ -56,11 +56,11 @@ label decision:
             scene black with fade
             with Pause(3)
 
-            call ending_stay
+            call ending_stay from _call_ending_stay
         "Leave":
             scene black with fade
             with Pause(3)
-            call ending_leave
+            call ending_leave from _call_ending_leave
 
     show text "Made by syrtis, K.O. and Villain." with fade
     with Pause(3)

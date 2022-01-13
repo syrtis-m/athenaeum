@@ -35,9 +35,9 @@ label ending_stay:
     "Harper hands you a note folded in half."
 
     if stay > leave:
-        call ending_stay_stay
+        call ending_stay_stay from _call_ending_stay_stay
     else:
-        call ending_stay_leave
+        call ending_stay_leave from _call_ending_stay_leave
 
     return
 
