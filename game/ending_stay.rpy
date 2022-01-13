@@ -3,15 +3,15 @@ label ending_stay:
     scene house evening with fade
     with Pause(2)
 
-    show mom neutral at left
+    show mom neutral at center
 
     m "... So you decided to Stay?"
 
     pc "Yeah... Yeah I think I'm going to Stay"
 
-    m "Oh this is so wonderful [yn]! I’m so glad you’re going to be staying around!"
+    m happy "Oh this is so wonderful [yn]! I’m so glad you’re going to be staying around!"
 
-    m "I would have been supportive of you leaving, but now I won’t have to worry if you’ll be okay out there."
+    m @ neutral "I would have been supportive of you leaving, but now I won’t have to worry if you’ll be okay out there."
 
     m "Anyway, write down your decision and go tell Harper!"
 
@@ -19,7 +19,7 @@ label ending_stay:
 
     scene town center evening with fade
 
-    show harper neutral at middle
+    show harper neutral at center
     with Pause(2)
 
     h "...Took you a while, huh."
@@ -46,17 +46,17 @@ label ending_stay_stay:
 
     $ renpy.pause(delay=1)
 
-    h "YES!! YOU'RE STAYING!"
+    h @ laugh "YES!! YOU'RE STAYING!"
 
-    h "I'm... I'm really glad"
+    h happy "I'm... I'm really glad."
 
     h "Obviously like I’d support you if you’d left, but… I’d miss you."
 
-    h "I.. was worried you’d chose to leave, and then I’d never see you again."
+    h @ sad "I.. was worried you’d chose to leave, and then I’d never see you again."
 
-    h "You’d be lonely or get hurt or get lost or who knows. You’d be gone and I wouldn’t know how you were."
+    h @ sad "You’d be lonely or get hurt or get lost or who knows. You’d be gone and I wouldn’t know how you were."
 
-    h "I..."
+    h @ neutral "I..."
 
     h "I'm glad, [yn]."
 
@@ -64,7 +64,7 @@ label ending_stay_stay:
 
     pc "I’m glad we’ll be here together."
 
-    show harper neutral at right
+    show harper happy at right
 
     show mom happy at left
 
@@ -72,7 +72,7 @@ label ending_stay_stay:
 
     h "Yes! We’ll be here together."
 
-    m "Oh, that’s just wonderful! I’m so glad."
+    m @ laugh "Oh, that’s just wonderful! I’m so glad."
 
     m "Come on over for dinner tonight, Harper! We’ll celebrate!"
 
@@ -88,11 +88,13 @@ label ending_stay_leave:
 
     $ renpy.pause(delay=1)
 
-    h "...Oh. I."
+    h upset "...Oh. I."
 
-    h "I’ll… I’ll miss you, [yn]."
+    h sad "I’ll… I’ll miss you, [yn]."
 
-    h "I’m excited to go out there I just… I thought we’d travel together."
+    h @ happy "I’m excited to go out there! I just…"
+
+    h "I thought we’d travel together."
 
     pc "Harper… I just… I’m not going to forget you."
 
@@ -100,25 +102,27 @@ label ending_stay_leave:
 
     pc "It’ll be different, but… different isn’t necessarily bad."
 
-    h "…Yeah. Yeah, I can do that."
+    h neutral "…Yeah. Yeah, I can do that."
 
     pc "I’ll miss you. I… I’ve known you forever. It’ll be different, but you’ll be happier out there."
 
-    h "Yeah... Yeah."
+    h happy "Yeah... Yeah."
 
     show harper neutral at right
 
-    show mom neutral at left
+    show mom happy at left
+
+    m "Harper! Are you staying?"
 
     h "No I'm... I'm Leaving."
 
-    m "Oh, Harper. It’ll be alright."
+    m sad "Oh, Harper. It’ll be alright."
 
-    m "I know it’s scary right now, but you’ll go out there and grow and figure out who you are!"
+    m happy "I know it’s scary right now, but you’ll go out there and grow and figure out who you are!"
 
     h "Yeah... Yeah."
 
-    m "Come on over for dinner tonight, Harper. We'll celebrate."
+    m neutral "Come on over for dinner tonight, Harper. We'll celebrate."
 
     scene black
 
