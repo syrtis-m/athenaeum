@@ -1,10 +1,5 @@
 label decision:
-    #TODO implement the system that checks what ending it needs to show, and then calls the right script for it.
-    #TODO implement decision
-
-    #TODO remove this testing stuff.
-    "Stay [stay]"
-    "Leave [leave]"
+    play music "audio/Ludum_Dare_32_Track_3.wav" loop fadein 1.0
 
     scene town center day with fade
     with Pause(1)
@@ -52,6 +47,8 @@ label decision:
     pc "Yeah. Um, Harper and I are making our decisions separately now."
 
     m @ happy "Oh, that’s a good idea!"
+
+    play music "audio/Ludum_Dare_30_Track_2.wav" loop fadein 1.0
 
     menu:
         m "Are you going to Stay in our community and find a role here, or Leave and find your place in the rest of the library?"

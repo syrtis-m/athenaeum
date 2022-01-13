@@ -42,6 +42,8 @@ label ending_stay:
     return
 
 label ending_stay_stay:
+    play music "audio/Ludum_Dare_38_Track_8.wav" loop fadein 1.0
+
     "You open the note. In shaky handwriting, \'Stay\' is written."
 
     $ renpy.pause(delay=1)
@@ -84,6 +86,8 @@ label ending_stay_stay:
     return
 
 label ending_stay_leave:
+    play music "audio/Ludum_Dare_38_Track_5.wav" loop fadein 1.0
+
     "You open the note. In shaky handwriting, \'Leave\' is written."
 
     $ renpy.pause(delay=1)

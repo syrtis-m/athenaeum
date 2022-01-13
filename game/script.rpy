@@ -23,7 +23,6 @@ label character_select:
 
     menu:
         h "Who do you want to talk to, [yn]?"
-        #TODO add scene transitions.
 
         "Robinson" if MET_ROBINSON == False:
             $ MET_ROBINSON = True

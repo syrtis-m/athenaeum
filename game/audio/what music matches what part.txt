@@ -1,0 +1,13 @@
+30 track 1 - introduction
+30 track 5 - cosette
+30 track 6 - character select
+32 track 2 - robinson
+32 track 5 - holden
+38 track 3 - bo
+
+
+decision: 32 track 3
+decision high tension: 30 track 2
+happy ending: 38 track 8
+sad ending: 38 track 5
+

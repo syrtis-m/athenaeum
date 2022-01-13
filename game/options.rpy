@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("Athenaeum") #TODO update config.name with final game name
+define config.name = _("Athenaeum")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -28,7 +28,6 @@ define config.version = "Thursday Beta" #TODO remove config version before pushi
 
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
-#TODO implement an about screen
 define gui.about = _p("""
 Writing, Programming: syrtis (@syrtis_ on twitter)
 
@@ -44,12 +43,10 @@ Music by Abstraction Music:
 \nhttp://abstractionmusic.com/
 
 """)
-#TODO implement credits for the music & shoot the music artist a DM. http://abstractionmusic.com/#secLicensing
 
 ## A short name for the game used for executables and directories in the built
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
-#TODO update build.name to match config.name
 define build.name = "athenaeum"
 
 define config.menu_include_disabled = True

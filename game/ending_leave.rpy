@@ -46,6 +46,7 @@ label ending_leave:
     return
 
 label ending_leave_stay:
+    play music "audio/Ludum_Dare_38_Track_5.wav" loop fadein 1.0
 
     "You open the note. In shaky handwriting, \'Stay\' is written."
 
@@ -89,6 +90,7 @@ label ending_leave_stay:
     return
 
 label ending_leave_leave:
+    play music "audio/Ludum_Dare_38_Track_8.wav" loop fadein 1.0
 
     "You open the note. In shaky handwriting, \'Leave\' is written."
 

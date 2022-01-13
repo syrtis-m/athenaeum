@@ -74,7 +74,7 @@ label introduction:
 
     show harper happy at right
 
-    h "Hello [yn]!" #TODO tentatively named the mom alex.
+    h "Hello [yn]!"
 
     pc "Hey Harper!"
 
