@@ -19,8 +19,6 @@ label character_select:
 
     h "Hmmm… Cosette’s probably in their studio, Robinson’s down by the canal with her fish traps, Bo’s over there tending his sheep… I guess that leaves Holden off in some corner somewhere."
 
-    "stay: [stay], leave: [leave]"
-
     menu:
         h "Who do you want to talk to, [yn]?"
 
