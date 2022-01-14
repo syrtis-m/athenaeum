@@ -21,7 +21,7 @@ label ending_leave:
 
     "You write \'Leave\' on a scrap of paper."
 
-    show town center evening with fade
+    scene town center evening with fade
 
     show harper neutral at center
     with Pause(2)
